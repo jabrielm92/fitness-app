@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./ExerciseGif.css";
 
 function ExerciseGif({ exerciseName }) {
   const [gifUrl, setGifUrl] = useState(null);
@@ -23,14 +24,14 @@ function ExerciseGif({ exerciseName }) {
   }, [exerciseName]);
 
   return (
-    <div>
+    <div className="gif-container">
       {gifUrl ? (
         <img src={gifUrl} alt={`${exerciseName} gif`} />
       ) : (
         <p>No GIF found for {exerciseName}</p>
       )}
     </div>
-  );
+  );  
 }
 
 export default ExerciseGif;

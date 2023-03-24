@@ -1,0 +1,14 @@
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .gif-container img {
+    max-width: 80%; /* Reduce the GIF size */
+    height: auto;
+    margin: 0 auto; /* Center the GIF horizontally */
+  }
+  
