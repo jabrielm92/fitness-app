@@ -24,7 +24,7 @@ function Signup() {
 
   return (
     <div className="signup">
-      <h2>Signup</h2>
+      <h2>SignUp</h2>
       <form onSubmit={handleSubmit} autocomplete="off">
         <input
           type="email"
