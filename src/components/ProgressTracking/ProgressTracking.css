@@ -1,0 +1,46 @@
+.progressTracking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.progressTracking h2 {
+  margin-bottom: 1rem;
+}
+
+.progressTracking h3 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.progressTracking form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressTracking input {
+  margin-bottom: 1rem;
+}
+
+.savedProgress {
+  margin-top: 2rem;
+}
+
+.progressEntry {
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.progressEntry p {
+  margin: 0.5rem 0;
+}
+
+.progressEntry ul {
+  padding-left: 1.5rem;
+}

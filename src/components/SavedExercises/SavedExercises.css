@@ -1,0 +1,30 @@
+body {
+  background-image: linear-gradient(to bottom right, red, black);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.savedExercises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.savedExercises h2 {
+  margin-bottom: 1rem;
+}
+
+.exercise-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.exerciseItem {
+  width: 100%;
+  margin-bottom: 1rem;
+}

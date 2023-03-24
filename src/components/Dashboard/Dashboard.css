@@ -1,0 +1,77 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.dashboard h1 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  text-shadow: 0 0 2px #000;
+  margin-bottom: 1rem;
+}
+
+.dashboard p {
+  font-size: 1.2rem;
+  color: #e6d7d7;
+}
+
+.dashboard-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dashboard-section {
+  background-color: #222;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 1rem;
+  width: 250px; /* Reduce the width */
+  height: 150px; /* Set a fixed height */
+  display: flex; /* Add display flex */
+  flex-direction: column; /* Set flex direction to column */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dashboard-text-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.dashboard-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #fff; /* Update text color */
+}
+
+.dashboard-section p {
+  font-size: 1rem;
+  color: #fff; /* Update text color */
+}
+
+.dashboard p:hover {
+  transform: translateY(-5px);
+  font-size: 1.7rem;
+}
+
+
+@media (max-width: 768px) {
+  .dashboard-sections {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
