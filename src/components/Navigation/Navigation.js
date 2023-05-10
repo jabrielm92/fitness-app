@@ -23,7 +23,7 @@ function Navigation() {
         {currentUser ? (
           <>
             <NavLink
-              to="/"
+              to="/dashboard"
               end
               className={({ isActive }) => activeClassName(isActive)}
             >

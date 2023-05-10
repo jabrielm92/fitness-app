@@ -12,13 +12,13 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
-    const auth = getAuth(); // Get the auth instance
+    const auth = getAuth();
 
     try {
-      await signInWithEmailAndPassword(auth, email, password); // Update the function call here
+      await signInWithEmailAndPassword(auth, email, password);
       setEmail("");
       setPassword("");
-      navigate("/");
+      navigate("/dashboard");
     } catch (error) {
       console.error("Error signing in", error);
       setError(error.message);
@@ -28,6 +28,7 @@ function Login() {
   return (
     <div className="login">
       <h2>Login</h2>
+      <p>demo email: myname@gmail.com password: cookies1</p>
       {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit} autoComplete="off">
         <input

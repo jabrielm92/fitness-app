@@ -22,7 +22,7 @@ function App() {
         {currentUser && <Navigation />}
         <div className="app-container">
           <Routes>
-            <Route path="/" element={<Homepage />} index/>
+            <Route path="/" element={<Homepage />} />
             <Route path="/fitness-app" element={<Homepage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />

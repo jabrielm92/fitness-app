@@ -6,8 +6,8 @@ function Homepage() {
   return (
     <div className="homepage">
       <h1>Welcome to the Fitness App</h1>
-      <p>Please sign up and log in to access your dashboard.</p>
-      <p>demo email: myname@gmail.com password: cookies1</p>
+      <p>In production stage.</p> 
+      <p>To demo, click Login and enter provided credentials.</p>
       <div className="homepage-links">
         <Link to="/login" className="homepage-link">
           Log in
