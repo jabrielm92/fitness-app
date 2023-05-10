@@ -1,7 +1,7 @@
 {
   "name": "fitness-app",
   "version": "0.1.0",
-  "homepage": "https://jabrielm92.github.io/fitness-app/",
+  "homepage": "https://jabrielm92.github.io/fitness-app/dashboard/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
