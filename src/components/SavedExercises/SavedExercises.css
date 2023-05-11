@@ -9,22 +9,55 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
-  width: 100%;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
 }
 
 .savedExercises h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: #000;
+  text-shadow: 0 0 2px #000;
   margin-bottom: 1rem;
 }
 
 .exercise-card-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 600px;
+  margin-top: 2rem;
 }
 
 .exerciseItem {
-  width: 100%;
-  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 800px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .exercise-card-container {
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+
+  .exerciseItem {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .exerciseItem {
+    max-width: 300px;
+  }
 }
