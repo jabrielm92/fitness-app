@@ -4,6 +4,7 @@ import './SearchExercises.css';
 import { db, collection, addDoc } from '../../firebase/firebase';
 import { useAuth } from '../../contexts/AuthContext';
 import ExerciseCard from '../ExerciseCard/ExerciseCard';
+import ExerciseGif from '../ExerciseGif/ExerciseGif';
 
 function SearchExercises() {
   const [exercises, setExercises] = useState([]);
@@ -55,10 +56,7 @@ function SearchExercises() {
       <h2>Search Exercises</h2>
       <div className="muscleGroupButtons">
         {muscleGroups.map((muscleGroup) => (
-          <button
-            key={muscleGroup}
-            onClick={() => searchExercises(muscleGroup)}
-          >
+          <button key={muscleGroup} onClick={() => searchExercises(muscleGroup)}>
             {muscleGroup}
           </button>
         ))}
@@ -67,6 +65,7 @@ function SearchExercises() {
         {exercises.map((exercise) => (
           <div key={exercise.id} className="exerciseItem">
             <ExerciseCard exercise={exercise} />
+            <ExerciseGif exerciseName={exercise.name} />
             <button onClick={() => saveExercise(exercise)}>Save</button>
           </div>
         ))}

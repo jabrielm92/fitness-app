@@ -9,8 +9,8 @@ function Logout() {
 
   const handleLogout = async () => {
     try {
-      await signOut(auth); // Update this line to use the new syntax
-      navigate("/login");
+      await signOut(auth);
+      navigate("/");
     } catch (error) {
       console.error("Error signing out", error);
     }

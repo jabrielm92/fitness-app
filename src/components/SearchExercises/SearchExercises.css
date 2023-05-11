@@ -19,9 +19,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-bottom: 2rem;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .muscleGroupButtons button {
@@ -34,8 +34,26 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .muscleGroupButtons button:hover {
   background-color: #0056b3;
+}
+
+.exerciseItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 800px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.exerciseItem:hover {
+  transform: scale(1.05);
 }
